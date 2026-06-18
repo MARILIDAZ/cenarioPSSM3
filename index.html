@@ -1,9 +1,9 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="pt">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Atividade - A autorização é necessária?</title>
+  <title>Atividade - A autorizaÃ§Ã£o Ã© necessÃ¡ria?</title>
   <style>
     :root {
       --ink: #17202a;
@@ -377,10 +377,10 @@
     <section class="shell" aria-labelledby="activity-title">
       <header class="topbar">
         <p class="kicker">Atividade interativa</p>
-        <h1 id="activity-title">A autorização é necessária?</h1>
-        <p class="intro">Leia cada situação e indique se deve existir autorização de trabalho ou procedimento formal equivalente.</p>
+        <h1 id="activity-title">A autorizaÃ§Ã£o Ã© necessÃ¡ria?</h1>
+        <p class="intro">Leia cada situaÃ§Ã£o e indique se deve existir autorizaÃ§Ã£o de trabalho ou procedimento formal equivalente.</p>
         <div class="meta" aria-label="Progresso da atividade">
-          <div class="pill" id="questionCounter">Situação 1 de 4</div>
+          <div class="pill" id="questionCounter">SituaÃ§Ã£o 1 de 4</div>
           <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
           <div class="pill" id="scoreLabel">0 certas</div>
         </div>
@@ -390,24 +390,24 @@
         <div id="quiz">
           <div class="question-panel">
             <article class="scenario">
-              <p class="scenario-number" id="scenarioNumber">Situação 1</p>
+              <p class="scenario-number" id="scenarioNumber">SituaÃ§Ã£o 1</p>
               <img class="scenario-image" id="scenarioImage" src="" alt="">
               <p class="scenario-text" id="scenarioText"></p>
             </article>
 
-            <div class="answers" id="answers" aria-label="Opções de resposta"></div>
+            <div class="answers" id="answers" aria-label="OpÃ§Ãµes de resposta"></div>
           </div>
 
           <div class="feedback" id="feedback" role="status" aria-live="polite"></div>
 
           <div class="actions">
-            <button class="secondary" type="button" id="restartButton">Recomeçar</button>
+            <button class="secondary" type="button" id="restartButton">RecomeÃ§ar</button>
             <button class="primary hidden" type="button" id="nextButton">Seguinte</button>
           </div>
         </div>
 
         <div class="result hidden" id="result" aria-live="polite">
-          <h2>Atividade concluída</h2>
+          <h2>Atividade concluÃ­da</h2>
           <p>Resultado final:</p>
           <div class="score-big"><span class="value" id="finalScore">0</span><span>/ 4</span></div>
           <p id="finalMessage"></p>
@@ -421,43 +421,43 @@
   <script>
     const questions = [
       {
-        title: "Situação 1",
-        image: "assets/situacao-1.png",
-        imageAlt: "Trabalhador a entrar num reservatório com equipamento de segurança e supervisão.",
-        scenario: "Entrada num reservatório para inspeção interior.",
+        title: "SituaÃ§Ã£o 1",
+        image: "assets/situacao-1.jpg",
+        imageAlt: "Trabalhador a entrar num reservatÃ³rio com equipamento de seguranÃ§a e supervisÃ£o.",
+        scenario: "Entrada num reservatÃ³rio para inspeÃ§Ã£o interior.",
         answer: "Sim",
-        feedback: "A entrada em espaço confinado exige avaliação prévia, autorização, controlo atmosférico, comunicação, supervisão e meios de emergência."
+        feedback: "A entrada em espaÃ§o confinado exige avaliaÃ§Ã£o prÃ©via, autorizaÃ§Ã£o, controlo atmosfÃ©rico, comunicaÃ§Ã£o, supervisÃ£o e meios de emergÃªncia."
       },
       {
-        title: "Situação 2",
-        image: "assets/situacao-2.png",
-        imageAlt: "Trabalhador a realizar soldadura junto de materiais combustíveis.",
-        scenario: "Soldadura numa zona onde existem materiais combustíveis próximos.",
+        title: "SituaÃ§Ã£o 2",
+        image: "assets/situacao-2.jpg",
+        imageAlt: "Trabalhador a realizar soldadura junto de materiais combustÃ­veis.",
+        scenario: "Soldadura numa zona onde existem materiais combustÃ­veis prÃ³ximos.",
         answer: "Sim",
-        feedback: "Trabalhos a quente exigem controlo específico do risco de incêndio, limpeza da área, meios de combate a incêndio e, quando definido, vigia."
+        feedback: "Trabalhos a quente exigem controlo especÃ­fico do risco de incÃªndio, limpeza da Ã¡rea, meios de combate a incÃªndio e, quando definido, vigia."
       },
       {
-        title: "Situação 3",
-        image: "assets/situacao-3.png",
-        imageAlt: "Trabalhador a substituir uma lâmpada numa zona acessível.",
-        scenario: "Substituição simples de uma lâmpada numa zona acessível, sem trabalho em altura, sem intervenção elétrica e de acordo com procedimento interno.",
-        answer: "Pode não ser necessária autorização formal",
-        feedback: "A necessidade de autorização depende do risco, do procedimento interno e das condições concretas da tarefa. Se houver trabalho em altura, acesso a instalação elétrica ou outra condição de risco, a tarefa deve ser reavaliada."
+        title: "SituaÃ§Ã£o 3",
+        image: "assets/situacao-3.jpg",
+        imageAlt: "Trabalhador a substituir uma lÃ¢mpada numa zona acessÃ­vel.",
+        scenario: "SubstituiÃ§Ã£o simples de uma lÃ¢mpada numa zona acessÃ­vel, sem trabalho em altura, sem intervenÃ§Ã£o elÃ©trica e de acordo com procedimento interno.",
+        answer: "Pode nÃ£o ser necessÃ¡ria autorizaÃ§Ã£o formal",
+        feedback: "A necessidade de autorizaÃ§Ã£o depende do risco, do procedimento interno e das condiÃ§Ãµes concretas da tarefa. Se houver trabalho em altura, acesso a instalaÃ§Ã£o elÃ©trica ou outra condiÃ§Ã£o de risco, a tarefa deve ser reavaliada."
       },
       {
-        title: "Situação 4",
-        image: "assets/situacao-4.png",
-        imageAlt: "Trabalhador a realizar manutenção num painel elétrico bloqueado e sinalizado.",
-        scenario: "Manutenção em painel elétrico com necessidade de desenergização.",
+        title: "SituaÃ§Ã£o 4",
+        image: "assets/situacao-4.jpg",
+        imageAlt: "Trabalhador a realizar manutenÃ§Ã£o num painel elÃ©trico bloqueado e sinalizado.",
+        scenario: "ManutenÃ§Ã£o em painel elÃ©trico com necessidade de desenergizaÃ§Ã£o.",
         answer: "Sim",
-        feedback: "Trabalhos elétricos exigem procedimento definido, bloqueio/etiquetagem ou consignação, verificação de ausência de tensão e comunicação clara aos intervenientes."
+        feedback: "Trabalhos elÃ©tricos exigem procedimento definido, bloqueio/etiquetagem ou consignaÃ§Ã£o, verificaÃ§Ã£o de ausÃªncia de tensÃ£o e comunicaÃ§Ã£o clara aos intervenientes."
       }
     ];
 
     const options = [
       "Sim",
-      "Pode não ser necessária autorização formal",
-      "Não"
+      "Pode nÃ£o ser necessÃ¡ria autorizaÃ§Ã£o formal",
+      "NÃ£o"
     ];
 
     let current = 0;
@@ -532,7 +532,7 @@
 
       feedback.className = `feedback show ${isCorrect ? "correct" : "wrong"}`;
       feedback.innerHTML = `
-        <strong>${isCorrect ? "Correto." : "A resposta mais adequada é: " + question.answer + "."}</strong>
+        <strong>${isCorrect ? "Correto." : "A resposta mais adequada Ã©: " + question.answer + "."}</strong>
         <span>${question.feedback}</span>
       `;
 
@@ -557,8 +557,8 @@
       result.classList.remove("hidden");
       finalScore.textContent = score;
       finalMessage.textContent = score === questions.length
-        ? "Excelente. Reconheceu todas as situações que exigem autorização ou procedimento formal equivalente."
-        : "Reveja as situações assinaladas. O essencial é confirmar sempre o risco real, o procedimento interno e as condições concretas da tarefa.";
+        ? "Excelente. Reconheceu todas as situaÃ§Ãµes que exigem autorizaÃ§Ã£o ou procedimento formal equivalente."
+        : "Reveja as situaÃ§Ãµes assinaladas. O essencial Ã© confirmar sempre o risco real, o procedimento interno e as condiÃ§Ãµes concretas da tarefa.";
 
       review.innerHTML = "";
       questions.forEach((question, index) => {
@@ -591,3 +591,4 @@
   </script>
 </body>
 </html>
+
